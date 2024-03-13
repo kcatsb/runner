@@ -46,6 +46,7 @@ RUN apt-get update -y \
     curl \
     wget \
     unzip \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 RUN adduser --disabled-password --gecos "" --uid 1001 runner \
